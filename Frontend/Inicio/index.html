@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+        <div id="formulario">
+            <input id="placa" minlength="7" maxlength="7" type="text" placeholder="Placa:">
+            <!-- <label for="name">Placa</label> -->
+
+            <input id="marca" type="text" placeholder="Marca:">
+            <!-- <label for="name">Marca</label> -->
+
+            <input id="modelo" type="text" placeholder="Modelo:">
+            <!-- <label for="name">Modelo</label> -->
+            <!-- <input id="dono" type="text" placeholder="Dono:"> -->
+
+            <div class="escolher"><label for="vaga" id="selecionar_vaga">Escolha uma vaga:</label></div>
+            <select id="vagas">
+                <option value="normal">Normal</option>
+                <option value="gestante">Gestante</option>
+                <option value="deficiente">Deficiente</option>
+                <option value="idoso">Idoso</option>
+            </select>
+
+            <div id="Informacoes"></div>
+        </div>
+
+        <!-- <button id="cadastrar">Cadastrar</button> -->
+
+        <button onclick="cadastrarCarro(event)" alt="cadastrar">
+            <i>C</i>
+            <i>A</i>
+            <i>D</i>
+            <i>A</i>
+            <i>S</i>
+            <i>T</i>
+            <i>R</i>
+            <i>A</i>
+            <i>R</i>
+        </button>
+
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

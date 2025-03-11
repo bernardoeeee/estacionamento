@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+    <link rel="stylesheet" href="listagem.css">
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Lista de Carros</h1>
+
+        <!-- Lista onde os carros serão exibidos -->
+        <ul id="carros-lista">
+
+        </ul>
+
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <h2>Editar Carro</h2>
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" required>
+                <label for="placa">Marca:</label>
+                <input type="text" id="marca" required>
+                <label for="CPF">Modelo:</label>
+                <input type="text" id="modelo" required>
+                <label for="vaga" id="frase_vaga">Escolha uma vaga:</label>
+                <select id="vaga">
+                    <option value="normal">Normal</option>
+                    <option value="gestante">Gestante</option>
+                    <option value="deficiente">Deficeinte</option>
+                    <option value="idoso">Idoso</option>
+                </select>
+                <button onclick="editarCarro()">Salvar</button>
+            </div>
+        </div>
+        <!-- Botão para atualizar a lista manualmente -->
+        <!-- <button onclick="carregarCarros(event)" id="atualizar-lista">Atualizar Lista</button> -->
+    </div>
+
+    <script src="listagem.js"></script>
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
